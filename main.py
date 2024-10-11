@@ -102,8 +102,7 @@ if __name__ == '__main__':
     scaler = scaler = joblib.load('models/FPT_Joback.pkl')
 
     # take the smiles from user
-    smiles = 'CCCC=CCc1ccccc1'
-
+    smiles = 'CSc1ccccc1'
     try:
         fpt = predict_flash_point(model, scaler, smiles)
         print('-'*100)
